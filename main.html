@@ -45,7 +45,7 @@
     <img class="mx-auto w-8" src="assets/purse1.png" alt="">
     <h3>Pay Bill</h3>
 </div>
-<div class="box border border-black p-4 text-center rounded-xl">
+<div id="Transactions-box" class="box border border-black p-4 text-center rounded-xl">
     <img class="mx-auto w-8" src="assets/transaction1.png" alt="">
     <h3>Transactions</h3>
 </div>
@@ -58,7 +58,7 @@
           <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
             <form class="card-body">
                 <legend>Select Bank</legend>
-                <select class="select select-bordered w-full max-w-xs">
+                <select id="allbank" class="select select-bordered w-full max-w-xs">
                     <option disabled selected>Choose option</option>
                     <option value="Bikash">Bikash</option>
                     <option value="Nagad">Nagad</option>
@@ -70,7 +70,7 @@
                     <label class="label">
                       <span class="label-text">Acount number</span>
                     </label>
-                    <input value="01348576523" id="Acount-number" type="number" placeholder="type your acount number" class="input input-bordered" required />
+                    <input value="01234567893" id="Acount-number" type="number" placeholder="type your acount number" class="input input-bordered" required />
                   
                     <label class="label">
                       <span class="label-text">Amount</span>
@@ -124,6 +124,11 @@
     <button id="cashout-btn" class="btn btn-primary">Cashout</button>
   </div>
 </section>
+
+<section id="Transactions-history">
+    <h1 class="text-3xl font-bold text-red-400 text-center p-3">Transactions History</h1>
+    <div id="transaction-container"></div>
+</section>
 </section>
 </header>
 
@@ -134,5 +139,6 @@
  <script src="/script/toggle.js"></script>
  <script src="script/cashout.js"></script>
  <script src="/script/logout.js"></script>
+ <script src="./script/transactions.js"></script>
 </body>
 </html>
